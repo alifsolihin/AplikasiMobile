@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoMenu">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:text="Informasi Aplikasi"
+        android:fontFamily="@font/made_sunflower_font"
+        android:textSize="28dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="600dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/idCARDfoto"
+            android:backgroundTint="#EAE5E5"
+            android:layout_marginTop="26dp"
+            android:layout_gravity="center"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:cardCornerRadius="100dp"
+            app:cardBackgroundColor="@color/white">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:cardCornerRadius="100dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/logo_miki"
+                    android:scaleType="centerCrop"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Mimpi Kita"
+            android:fontFamily="@font/alex_brush_font"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="10dp"
+                android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                android:text="Dibuat Oleh: "
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/idTVemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Team AI 24"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_group_24"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:text="Nama Team: "
+                android:textSize="15dp"/>
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Muhammad Alif Solihin"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/idfoto1"
+                        android:layout_marginRight="1dp"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        app:civ_border_color="@color/blue"
+                        app:civ_border_width="2dp"
+                        android:padding="12dp"
+                        android:src="@drawable/gi_foto_info1" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="5dp"
+                        android:text="User Experience(UX) Design"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="37dp"
+                        android:text="Nurul Ilmi"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_marginLeft="3dp"
+                        android:id="@+id/idfoto2"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="2dp"
+                        app:civ_border_color="@color/blue"
+                        app:civ_border_width="2dp"
+                        android:padding="12dp"
+                        android:src="@drawable/gi_foto_info2" />
+
+                    <TextView
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:layout_marginLeft="1dp"
+                        android:text="User Interface(UI) Design"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/ic_baseline_info_24"
+            android:drawablePadding="5dp"
+            android:text="Tentang Aplikasi"
+            android:textSize="15dp"/>
+
+        <androidx.cardview.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:elevation="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_width="350dp"
+            android:layout_height="100dp">
+
+                <TextView
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="Aplikasi ini dibuat untuk memenuhi kebutuhan masyarakat tentang sebuah aplikasi yang dapat memudahkan dalam mencari suatu informasi pengembangan skill yang bermanfaat bagi semua."/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

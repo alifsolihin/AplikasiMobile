@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E2FD8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Tambah Data User"
+        tools:ignore="MissingConstraints" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_user_us" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="10dp"
+                    android:hint="Username Anda"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="50"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETUserUS"
+                        android:maxLength="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_name_us" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Nama Lengkap Anda"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETNamaUS"
+                        android:maxLength="30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_call_us" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Nomor Telepon Anda"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="20"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETCallUS"
+                        android:maxLength="20"
+                        android:inputType="number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_location_us" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:hint="Alamat Tempat Tinggal Anda"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="50"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETAlamatUS"
+                        android:maxLength="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_born_us" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Tanggal Lahir Anda"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="20"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETTanggalLahirUS"
+                        android:maxLength="20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_key_us" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Password Anda"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:passwordToggleEnabled="true"
+                    app:counterMaxLength="50"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:inputType="textPassword"
+                        android:id="@+id/ETPassUS"
+                        android:maxLength="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="90dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_role_us" />
+
+                <Spinner
+                    android:layout_gravity="center"
+                    android:id="@+id/idSPlv"
+                    android:entries="@array/peran_admin"
+                    android:layout_height="50dp"
+                    android:layout_width="150dp"/>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/IBGambarEV"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/costumbutton1"
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gi_camera_ae" />
+
+                <Button
+                    android:id="@+id/BTNtambah"
+                    android:layout_width="160dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:backgroundTint="@color/blue"
+                    android:text="Submit DATA"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+</LinearLayout>

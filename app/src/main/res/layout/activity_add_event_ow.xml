@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E2FD8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Tambah Data Event"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Page 1"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#807F7F"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_event_ae" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="10dp"
+                    android:hint="Nama Event"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETNamaEV"
+                        android:maxLength="30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_calender_ae" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Tanggal Registrasi"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="20"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETTglReg"
+                        android:maxLength="20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_location_ae" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Lokasi Event"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="50"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETLokasiEV"
+                        android:maxLength="50"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_time_ae" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:hint="Jadwal Event"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:endIconMode="clear_text"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETHariEV"
+                        android:maxLength="20"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Mulai"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="3dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:endIconMode="clear_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETMulaiEV"
+                        android:maxLength="6"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Akhir"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginBottom="3dp"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:endIconMode="clear_text"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETAkhirEV"
+                        android:maxLength="6"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_user_ae" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Nama Penyelenggara"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:focusable="false"
+                        android:id="@+id/ETNamaOnwer"
+                        android:maxLength="30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:src="@drawable/gi_desc_ae" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_marginTop="3dp"
+                    android:hint="Deskripsi Event"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    app:counterEnabled="true"
+                    app:boxStrokeColor="@color/blue"
+                    app:hintTextColor="@color/blue"
+                    app:counterMaxLength="30"
+                    app:endIconMode="clear_text"
+                    android:layout_width="295dp"
+                    android:layout_height="wrap_content">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ETDeskEV"
+                        android:maxLength="30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/BTNNextDT"
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="4dp"
+                    android:backgroundTint="@color/blue"
+                    android:text="Next"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddEvent2">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarDE2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0E2FD8"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Edit Data Sertifikat"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_event_ae" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Nama Event"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:counterEnabled="true"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:counterMaxLength="30"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETNamaEV"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_tropy_ow" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Nama Pemilik Sertifikat"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:counterEnabled="true"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:counterMaxLength="30"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETNamaWin"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_owner_ev" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Nama Pemilik Event"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:counterEnabled="true"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:counterMaxLength="30"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETNamaOw"
+                    android:focusable="false"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/gi_ticket_ae" />
+
+            <EditText
+                android:id="@+id/ETJumlahEV"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:hint="Jumlah Tiket"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/IBGambarEV"
+                    android:layout_width="200dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="2dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/costumbutton1"
+                    android:clickable="true"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gi_camera_ae" />
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/BTNeditEV"
+                        android:layout_width="150dp"
+                        android:layout_height="52dp"
+                        android:layout_marginRight="10dp"
+                        android:drawableLeft="@drawable/ic_baseline_edit_24"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#0054AE"
+                        android:text="Edit Data"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/BTNhapusEV"
+                        android:layout_width="170dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="10dp"
+                        android:drawableRight="@drawable/ic_baseline_delete_24_w"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="5dp"
+                        android:backgroundTint="#EB0202"
+                        android:text="Hapus Data"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

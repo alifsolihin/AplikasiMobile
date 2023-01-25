@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bgn_dashboard"
+    android:layout_height="match_parent"
+    tools:context=".AddPemesanan">
+
+    <TextView
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_marginTop="18dp"
+        android:text="Pemesanan Event💰"
+        android:fontFamily="@font/made_sunflower_font"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:text="Pesan Sesuai Budget🤗"
+        android:fontFamily="@font/made_sunflower_font"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="13dp"
+        android:text="List Pemesanan Event 😊"
+        android:fontFamily="@font/made_sunflower_font"
+        android:textColor="#636363"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_event_ae" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Nama Event"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/ETNamaEV"
+                    android:focusable="false"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/gi_time_ae" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:hint="Jadwal Event"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:endIconMode="clear_text"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/ETHariEV"
+                android:maxLength="20"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="3dp"
+            android:hint="Mulai"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:endIconMode="clear_text"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/ETMulaiEV"
+                android:maxLength="6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="3dp"
+            android:hint="Akhir"
+            android:layout_marginLeft="3dp"
+            android:layout_marginBottom="3dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:endIconMode="clear_text"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/ETAkhirEV"
+                android:maxLength="6"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="2dp"
+            android:src="@drawable/gi_location_ae" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_marginTop="3dp"
+            android:hint="Lokasi Event"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            app:boxStrokeColor="@color/blue"
+            app:hintTextColor="@color/blue"
+            app:endIconMode="clear_text"
+            android:layout_width="295dp"
+            android:layout_height="wrap_content">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:focusable="false"
+                android:id="@+id/ETLokasiEV"
+                android:maxLength="50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_price_ae" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Harga Tiket Event"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
+                    android:focusable="false"
+                    android:id="@+id/ETHargaTK"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_owner_ev" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Nama Owner Event"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="text"
+                    android:focusable="false"
+                    android:id="@+id/ETOwnerEV"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="26dp"
+            android:text="Isi Data Dibawah☺"
+            android:fontFamily="@font/made_sunflower_font"
+            android:textColor="#636363"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_user_ae" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="3dp"
+                android:hint="Nama Lengkap Peserta"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:focusable="false"
+                    android:id="@+id/ETNamaOnwer"
+                    android:maxLength="30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="2dp"
+                android:src="@drawable/gi_ticket_ae" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_marginTop="10dp"
+                android:hint="Jumlah Tiket Event"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                app:boxStrokeColor="@color/blue"
+                app:hintTextColor="@color/blue"
+                app:endIconMode="clear_text"
+                android:layout_width="295dp"
+                android:layout_height="wrap_content">
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:inputType="number"
+                    android:id="@+id/ETJumlahTK"
+                    android:maxLength="10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:gravity="left"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:text="Total Biayanya:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/TVjmlHrg"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="3dp"
+                android:layout_gravity="center"
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/BTNSdataEV"
+                    android:layout_width="140dp"
+                    android:layout_height="50dp"
+                    android:textSize="14dp"
+                    android:layout_marginRight="20dp"
+                    android:backgroundTint="@color/blue"
+                    android:text="Submit Data"
+                    android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

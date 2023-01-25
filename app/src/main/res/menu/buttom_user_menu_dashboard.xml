@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/gi_home_nav"
+        android:title="Home" />
+    <item
+        android:id="@+id/action_chat"
+        android:icon="@drawable/gi_chat_nav"
+        android:title="Chat" />
+    <item
+        android:id="@+id/action_user"
+        android:icon="@drawable/gi_user_nav"
+        android:title="User" />
+
+</menu>

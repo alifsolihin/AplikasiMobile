@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_menuuser"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserMenu">
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="25dp"
+      android:text="Edit Akun Anda"
+      android:fontFamily="@font/made_sunflower_font"
+      android:textSize="28dp"
+      android:textColor="#FFFFFF"
+      android:textStyle="bold" />
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_gravity="center"
+      android:layout_width="match_parent"
+      android:layout_height="560dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idCARDfoto"
+        android:backgroundTint="#EAE5E5"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardCornerRadius="110dp"
+        app:cardBackgroundColor="@color/white">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="110dp"
+          android:layout_height="110dp"
+          app:cardCornerRadius="90dp"
+          android:layout_gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/IVgambar1"
+            android:layout_gravity="center"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:scaleType="centerCrop"/>
+
+      </androidx.cardview.widget.CardView>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Silahkan Perbaharui Akun Anda 😊"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+      <EditText
+          android:id="@+id/idETemail"
+          android:inputType="text"
+          android:focusable="false"
+          android:hint="Masukan Username Anda"
+          android:layout_marginLeft="20dp"
+          android:drawableStart="@drawable/costum_user_icon"
+          android:background="@drawable/costum_input_lg"
+          android:drawablePadding="12dp"
+          android:textSize="16dp"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:ems="12"
+          android:layout_width="280dp"
+          android:layout_height="45dp"/>
+
+      <EditText
+          android:id="@+id/idETnama"
+          android:layout_marginTop="25dp"
+          android:inputType="text"
+          android:hint="Masukan Nama Anda"
+          android:layout_marginLeft="20dp"
+          android:drawableStart="@drawable/costum_name_icon"
+          android:background="@drawable/costum_input_lg"
+          android:drawablePadding="12dp"
+          android:textSize="16dp"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:ems="12"
+          android:layout_width="280dp"
+          android:layout_height="45dp"/>
+
+      <EditText
+          android:id="@+id/idETcall"
+          android:layout_marginTop="25dp"
+          android:inputType="number"
+          android:hint="Masukan Nomor Anda"
+          android:layout_marginLeft="20dp"
+          android:drawableStart="@drawable/costum_call_icon"
+          android:background="@drawable/costum_input_lg"
+          android:drawablePadding="12dp"
+          android:textSize="16dp"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:ems="12"
+          android:layout_width="280dp"
+          android:layout_height="45dp"/>
+
+      <EditText
+          android:id="@+id/idETalamat"
+          android:layout_marginTop="25dp"
+          android:inputType="text"
+          android:hint="Masukan Alamat Anda"
+          android:layout_marginLeft="20dp"
+          android:drawableStart="@drawable/costum_place_icon"
+          android:background="@drawable/costum_input_lg"
+          android:drawablePadding="12dp"
+          android:textSize="16dp"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:ems="12"
+          android:layout_width="280dp"
+          android:layout_height="45dp"/>
+
+      <EditText
+          android:id="@+id/idETtgllahir"
+          android:layout_marginTop="25dp"
+          android:inputType="datetime"
+          android:hint="Masukan Tanggal Lahir Anda"
+          android:layout_marginLeft="20dp"
+          android:drawableStart="@drawable/costum_date_icon"
+          android:background="@drawable/costum_input_lg"
+          android:drawablePadding="12dp"
+          android:textSize="16dp"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:ems="12"
+          android:layout_width="280dp"
+          android:layout_height="45dp"/>
+
+      <EditText
+          android:id="@+id/idETpass"
+          android:layout_marginTop="25dp"
+          android:inputType="textPassword"
+          android:hint="Masukan Password Anda"
+          android:layout_marginLeft="20dp"
+          android:drawableStart="@drawable/costum_lock_icon"
+          android:background="@drawable/costum_input_lg"
+          android:drawablePadding="12dp"
+          android:textSize="16dp"
+          android:paddingStart="12dp"
+          android:paddingEnd="12dp"
+          android:ems="12"
+          android:layout_width="280dp"
+          android:layout_height="45dp"/>
+
+      <LinearLayout
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="5dp"
+          android:layout_marginLeft="43dp"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_gravity="center"
+            android:id="@+id/idSPlv"
+            android:entries="@array/peran"
+            android:layout_marginTop="3dp"
+            android:layout_height="50dp"
+            android:layout_width="120dp"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/IBGambarEV"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:padding="12dp"
+            android:src="@drawable/gi_camera_ae" />
+      </LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:layout_marginLeft="60dp"
+        android:layout_gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+      <Button
+          android:id="@+id/idBTNedit"
+          android:backgroundTint="#2C57AC"
+          android:text="Edit Akun"
+          android:drawableRight="@drawable/ic_baseline_build_circle_24"
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="13dp"
+          android:layout_width="180dp"
+          android:layout_height="55dp"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+    </ScrollView>
+  </LinearLayout>
+
+</LinearLayout>
